@@ -75,3 +75,10 @@
 .h6{
   color: #02D97B;
 }
+
+
+.center {
+ text-align: center;
+ position:relative;
+}
+
