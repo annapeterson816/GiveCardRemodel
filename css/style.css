@@ -72,7 +72,7 @@
   max-height:63.28;
 }
 
-.templateux-navbar .templateux-logo a{font-size:22px;rgb(108, 202, 31)}.templateux-navbar .templateux-toggle{outline:none!important;display:none}
+.templateux-navbar .templateux-logo a{font-size:22px;color:rgb(108, 202, 31)}.templateux-navbar .templateux-toggle{outline:none!important;display:none}
 
 .templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner,.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:after,.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:before{background-color:rgb(255, 255, 255)}.templateux-navbar .templateux-toggle.templateux-toggle-light:hover{opacity:1}.templateux-navbar 
 
@@ -129,4 +129,85 @@
   top: 0;
   left: 0;
   z-index: 100;
+}
+
+/*from the timeline template */
+
+
+  /* line down middle of timeline*/
+.timeline:before {
+  content: '';
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 4px;
+  background-color: #02D97B;
+}
+
+body .entries {
+  
+
+
+  width: calc(100% - 80px);
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  left: -5px;
+}
+body .entries .entry {
+  width: calc(50% - 80px);
+  float: left;
+  padding: 20px;
+  clear: both;
+  text-align: right;
+}
+body .entries .entry:not(:first-child) {
+  margin-top: -60px;
+}
+body .entries .entry .title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+body .entries .entry .title:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #02D97B;
+  background-color: rgb(255, 255, 255); /*big circles */
+  border-radius: 100%;
+  top: 50%;
+  
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); 
+  right: -109px;
+  z-index: 1000;
+}
+body .entries .entry .title.big:before {
+  width: 24px;
+  height: 24px;
+  -webkit-transform: translate(8px, -50%);
+          transform: translate(8px, -50%);
+}
+body .entries .entry .body {
+  color: rgb(17, 17, 16);
+}
+body .entries .entry .body p {
+  line-height: 1.6em;
+}
+body .entries .entry:nth-child(2n) {
+  text-align: left;
+  float: right;
+}
+body .entries .entry:nth-child(2n) .title:before {
+  left: -99px;
+}
+body .entries .entry:nth-child(2n) .title.big:before {
+  -webkit-transform: translate(-8px, -50%);
+          transform: translate(-8px, -50%);
 }
