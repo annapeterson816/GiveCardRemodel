@@ -244,3 +244,69 @@ body .entries .entry:nth-child(2n) .title.big:before {
   z-index:100;
   background: #fff;
 }
+
+
+.krypton-subscribe-input {
+  height: 50px;
+  min-width: 300px;
+  width: 100%;
+  background: rgba(192, 195, 197, 0.08);
+  border: 1px solid #02D97B;
+  border-radius: 100px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.5), 0 0 25px 0 rgba(167, 179, 236, 0.16);
+  padding-top: 5px;
+  padding-right: 130px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  color: #fff;
+  transition: all .4s;
+  box-sizing: inherit;
+  
+}
+
+.subscribe-button {
+  border-radius: 100px;
+  display: block;
+  position: absolute;
+  right: 4px;
+  top:6px;
+  color: white;
+  background-color: #02D97B;
+  border: none;
+  height:40px;
+  padding-right:26px;
+  padding-left:26px;
+  padding-top:0px;
+  padding-bottom:0px;
+  
+  text-align: center;
+  text-decoration: none;
+  
+  font-weight:300;
+  
+  cursor: pointer;
+  font-size: 14px;
+  
+  margin-top:0px;
+  margin-right: 0px;
+  margin-bottom:0px;
+  margin-left: 2px;
+  
+  box-sizing: inherit;
+  
+}
+.control {
+  position: relative;
+  width: 100%;
+  text-align:right;
+
+  margin: auto;
+  display: block;
+
+  
+}
+
+.subscribe-box{
+  display:inline-block;
+  width = 33.33%;
+}
