@@ -258,7 +258,7 @@ body .entries .entry:nth-child(2n) .title.big:before {
   padding-right: 130px;
   padding-bottom: 5px;
   padding-left: 30px;
-  color: #fff;
+  color: black;
   transition: all .4s;
   box-sizing: inherit;
   
