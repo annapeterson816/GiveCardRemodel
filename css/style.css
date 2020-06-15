@@ -308,5 +308,6 @@ body .entries .entry:nth-child(2n) .title.big:before {
 
 .subscribe-box{
   display:inline-block;
-  width = 33.33%;
+  width: 33.33%;
+
 }
